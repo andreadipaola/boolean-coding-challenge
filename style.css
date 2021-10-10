@@ -1,0 +1,99 @@
+/* Resettati margini di tutti gli elementi e settata la regola CSS border-box; */
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-image: url("background.jpg");
+  background-size: cover;
+  color: white;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+.container {
+  width: 800px;
+  margin: 20px auto 40px;
+  background-color: rgba(0,0,0,.5);
+  border-radius: 10px;
+  padding: 50px;
+}
+
+
+/* Regole CSS per l'header */
+header {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.logo {
+  width: 200px;
+}
+
+.slogan {
+  color: rgb(34,219,39);
+  font-size: 30px;
+}
+
+
+/* Regole CSS per il nav */
+nav {
+  background-color: rgb(34,219,39);
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+
+/* Regole CSS per il main */
+.square-pointer:after {
+  content: "\25FD";
+}
+
+.user {
+  display: inline-block;
+  font-size: 20px;
+}
+
+.right-arrow-pointer:after {
+  content: "\21A6  ";
+}
+
+.position {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.charge {
+  margin-bottom: 2px;
+}
+
+/* Settate le caratteristiche generali della progress bar */
+progress {
+display: block;
+width: 500px;
+height: 25px;
+border: none;
+margin-bottom: 20px;
+}
+/* Settati lo sfondo e i bordi della progress bar */
+progress::-webkit-progress-bar {
+background: transparent;
+border-radius: 5px;
+}
+
+/* Settato l'aspetto della percentuale di carica della progress bar per i vari utenti */
+progress#first-user::-webkit-progress-value {
+border-radius: 5px;
+background: rgb(243,179,92);
+}
+
+progress#second-user::-webkit-progress-value {
+border-radius: 5px;
+background: rgb(44,193,46);
+}
+
+progress#third-user::-webkit-progress-value {
+border-radius: 5px;
+background: rgb(183,64,66);
+}

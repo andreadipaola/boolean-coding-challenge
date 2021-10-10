@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+
+<!-- Aggiunto font "Kumbh Sans" da Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300&display=swap" rel="stylesheet">
+    <title>lim - Noleggio Monopattini</title>
+  </head>
+
+  <body>
+    <div class="container">
+
+<!-- header contenente logo e slogan aziendale -->
+      <header>
+        <img class="logo" src="logo.png">
+        <h1 class="slogan">Taking Booleaners from A to B</h1>
+      </header>
+
+<!-- nav contenente pulsanti per la gestione del monopattino -->
+      <nav>
+        <button type="button">Prenota</button>
+        <button type="button">Termina Prentoazione</button>
+        <button type="button">Accendi Luci</button>
+      </nav>
+
+<!-- main contenente elenco monopattini disponibili -->
+      <main>
+
+        <!-- Primo utente -->
+        <div>
+          <span class="square-pointer"></span>
+          <h2 class="user">Monopattino Gino22</h2>
+        </div>
+        <div>
+          <span class="right-arrow-pointer"></span>
+          <span class="position">Via Guadalametri - a 220 metri da te</span>
+        </div>
+        <div class="charge">Stato carica:</div>
+        <progress id="first-user" value="65" max="100"></progress>
+
+        <!-- Secondo utente -->
+        <div>
+          <span class="square-pointer"></span>
+          <h2 class="user">Monopattino Mike24</h2>
+        </div>
+        <div>
+          <span class="right-arrow-pointer"></span>
+          <span class="position">Via Ricciardoni - a 420 metri da te</span>
+        </div>
+        <div class="charge">Stato carica:</div>
+        <progress id="second-user" value="100" max="100"></progress>
+
+        <!-- Terzo utente -->
+        <div>
+          <span class="square-pointer"></span>
+          <h2 class="user">Monopattino Fede154</h2>
+        </div>
+        <div>
+          <span class="right-arrow-pointer"></span>
+          <span class="position">Via Mentarini - a 490 metri da te</span>
+        </div>
+        <div class="charge">Stato carica:</div>
+        <progress id="third-user" value="25" max="100"></progress>
+
+      </main>
+    </div>
+  </body>
+</html>
